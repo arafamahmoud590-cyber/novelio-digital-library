@@ -1,0 +1,1557 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Your digital library for reading and downloading books and novels online."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+    <title>Novelio</title>
+  </head>
+  <body>
+    <header class="header">
+
+    <a href="home.html" class="logo">
+
+        <div class="logo_icon">
+
+            <i class="fa-solid fa-book-open"></i>
+
+        </div>
+
+        <div class="logo_text">
+
+            <h2>Novelio</h2>
+
+            <span>Digital Library</span>
+
+        </div>
+
+    </a>
+
+    <nav>
+
+        <ul class="nav">
+
+            <li><a href="home.html" class="navlink active">Home</a></li>
+
+            <li><a href="library.html" class="navlink">Browse</a></li>
+
+            <li><a href="categories.html" class="navlink">Categories</a></li>
+
+            <li><a href="authors.html" class="navlink">Authors</a></li>
+
+            <li><a href="favorites.html" class="navlink">Favorites</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="header_icons">
+
+        <a href="#"><i class="fa-regular fa-heart"></i></a>
+
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+
+    </div>
+
+</header>
+
+<a href="#" class="search-btn" id="searchBtn">
+    <i class="fa-solid fa-magnifying-glass"></i>
+</a>
+
+<!-- Overlay -->
+
+<div class="overlay" id="overlay"></div>
+
+<!-- Search Popup -->
+
+<div class="search-popup" id="searchPopup">
+
+    <!-- Golden Search Icon -->
+
+    <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <h2>Search Library</h2>
+
+    <!-- Search Form -->
+
+    <form id="searchForm">
+
+        <div class="search-input">
+
+            <!-- Search Icon -->
+
+            <i class="fa-solid fa-magnifying-glass search-icon-input"
+               id="searchIcon"></i>
+
+            <!-- Input -->
+
+            <input
+                id="searchInput"
+                type="text"
+                placeholder="Search books, authors or categories..."
+                autocomplete="off"
+            >
+
+            <!-- Clear -->
+
+            <i class="fa-solid fa-xmark clear-search"
+               id="clearSearch"></i>
+
+        </div>
+
+    </form>
+
+    <!-- Search Suggestions -->
+
+    <div class="search-suggestions" id="suggestions">
+
+        <h3>Recent Searches</h3>
+
+        <ul>
+
+            <li>Atomic Habits</li>
+
+            <li>Think and Grow Rich</li>
+
+            <li>Rich Dad Poor Dad</li>
+
+        </ul>
+
+        <h3>Popular Categories</h3>
+
+        <div class="categories">
+
+            <span>Programming</span>
+
+            <span>Business</span>
+
+            <span>Science</span>
+
+            <span>History</span>
+
+            <span>Romance</span>
+
+            <span>Self Development</span>
+
+        </div>
+
+    </div>
+
+    <!-- Search Results -->
+
+    <div class="search-results" id="searchResults">
+
+    </div>
+
+</div>
+
+
+
+    <section class="hero">
+
+    <h1 class="hero-heading">
+
+        Your Digital Library
+
+        <span>Awaits</span>
+
+    </h1>
+
+    <p class="hero-description">
+
+        Discover thousands of books, timeless novels,
+        and inspiring stories — all in one elegant place.
+
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="library.html" class="hero_btn">
+
+            Browse Library
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+    <div class="hero-stats">
+
+    <div class="stat-box">
+
+        <i class="fa-solid fa-book"></i>
+
+        <h3>25K+</h3>
+
+        <p>Books</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <i class="fa-solid fa-pen-nib"></i>
+
+        <h3>4K+</h3>
+
+        <p>Authors</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <i class="fa-solid fa-users"></i>
+
+        <h3>100K+</h3>
+
+        <p>Readers</p>
+
+    </div>
+
+</div>
+
+</section>
+
+    <section id="books" class="books_section">
+      <div class="section-header">
+
+    
+
+    <h2 class="section_title">
+        Popular Books
+    </h2>
+
+    <p class="section_subtitle">
+
+        Discover our most loved books
+        carefully selected for every reader.
+
+    </p>
+
+</div>
+  <div class="books_grid">
+
+      
+      <div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/atomic-habits.jpg"
+        alt="Atomic Habits"
+    >
+
+</div>
+
+    <span class="book_category">
+        Self Growth
+    </span>
+
+    <h3>Atomic Habits</h3>
+
+    <p class="author">
+
+        James Clear
+
+    </p>
+
+    <div class="rating">
+
+        ★★★★★
+
+        <span>4.9</span>
+
+    </div>
+
+    <p class="book_description">
+
+        Build better habits every day and improve your life.
+
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </button>
+
+        <a class="read_btn" href="#">
+
+            Read
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</div>
+
+        <div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/1984.jpg"
+        alt="1984"
+    >
+
+</div>
+
+    <span class="book_category">
+        Fiction
+    </span>
+
+    <h3>1984</h3>
+
+    <p class="author">
+        George Orwell
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.8</span>
+    </div>
+
+    <p class="book_description">
+        A dystopian classic novel exploring surveillance, freedom, and society.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Think and Grow Rich.jpg"
+        alt="Think and Grow Rich"
+    >
+
+</div>
+
+    <span class="book_category">
+        Self Growth
+    </span>
+
+    <h3>Think and Grow Rich</h3>
+
+    <p class="author">
+        Napoleon Hill
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.7</span>
+    </div>
+
+    <p class="book_description">
+        Success mindset and principles for achieving wealth and personal growth.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/The Great Gatsby.jpg"
+        alt="The Great Gatsby"
+    >
+
+</div>
+
+    <span class="book_category">
+        Classic
+    </span>
+
+    <h3>The Great Gatsby</h3>
+
+    <p class="author">
+        F. Scott Fitzgerald
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.6</span>
+    </div>
+
+    <p class="book_description">
+        A timeless story of love, wealth, dreams, and ambition in America.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/The Power of Habit.jpg"
+        alt="The Power of Habit"
+    >
+
+</div>
+
+    <span class="book_category">
+        Productivity
+    </span>
+
+    <h3>The Power of Habit</h3>
+
+    <p class="author">
+        Charles Duhigg
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.8</span>
+    </div>
+
+    <p class="book_description">
+        Learn how habits shape your life, work, and long-term success.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/The Alchemist.jpg"
+        alt="The Alchemist"
+    >
+
+</div>
+
+    <span class="book_category">
+        Adventure
+    </span>
+
+    <h3>The Alchemist</h3>
+
+    <p class="author">
+        Paulo Coelho
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.9</span>
+    </div>
+
+    <p class="book_description">
+        A magical journey about dreams, destiny, courage, and self-discovery.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+        <!-- =========================
+      Rich Dad Poor Dad
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Rich Dad Poor Dad.jpg"
+        alt="Rich Dad Poor Dad"
+    >
+
+</div>
+
+    <span class="book_category">
+        Finance
+    </span>
+
+    <h3>Rich Dad Poor Dad</h3>
+
+    <p class="author">
+        Robert T. Kiyosaki
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.8</span>
+    </div>
+
+    <p class="book_description">
+        Lessons about money, investing, and building long-term financial freedom.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      Man's Search for Meaning
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Man's Search for Meaning.jpg"
+        alt="Man's Search for Meaning"
+    >
+
+</div>
+
+    <span class="book_category">
+        Psychology
+    </span>
+
+    <h3>Man's Search for Meaning</h3>
+
+    <p class="author">
+        Viktor E. Frankl
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.9</span>
+    </div>
+
+    <p class="book_description">
+        A powerful journey about finding meaning, hope, and purpose in life.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      Can't Hurt Me
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Can't Hurt Me.jpg"
+        alt="Can't Hurt Me"
+    >
+
+</div>
+
+    <span class="book_category">
+        Motivation
+    </span>
+
+    <h3>Can't Hurt Me</h3>
+
+    <p class="author">
+        David Goggins
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.9</span>
+    </div>
+
+    <p class="book_description">
+        Learn mental toughness, discipline, and resilience from David Goggins.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      Zero to One
+========================= -->
+
+<div class="book_card">
+
+   <div class="book_cover">
+
+    <img
+        src="images/Zero to One.jpg"
+        alt="Zero to One"
+    >
+
+</div>
+
+    <span class="book_category">
+        Business
+    </span>
+
+    <h3>Zero to One</h3>
+
+    <p class="author">
+        Peter Thiel
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.7</span>
+    </div>
+
+    <p class="book_description">
+        Discover how startups create innovation and build the future from scratch.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      Sapiens
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Sapiens.jpg"
+        alt="Sapiens"
+    >
+
+</div>
+
+    <span class="book_category">
+        History
+    </span>
+
+    <h3>Sapiens</h3>
+
+    <p class="author">
+        Yuval Noah Harari
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.9</span>
+    </div>
+
+    <p class="book_description">
+        Explore the fascinating history and evolution of humankind through time.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      Start With Why
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Start With Why.jpg"
+        alt="Start With Why"
+    >
+
+</div>
+
+    <span class="book_category">
+        Leadership
+    </span>
+
+    <h3>Start With Why</h3>
+
+    <p class="author">
+        Simon Sinek
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.8</span>
+    </div>
+
+    <p class="book_description">
+        Discover how inspiring leaders motivate people by starting with purpose.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      The Subtle Art...
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/The Subtle Art of Not Giving a Fuck.jpg"
+        alt="The Subtle Art of Not Giving a Fuck"
+    >
+
+</div>
+
+    <span class="book_category">
+        Self Help
+    </span>
+
+    <h3>The Subtle Art of Not Giving a F*ck</h3>
+
+    <p class="author">
+        Mark Manson
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.7</span>
+    </div>
+
+    <p class="book_description">
+        A refreshing guide to living a meaningful life by focusing on what matters.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      Outliers
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Outliers.jpg"
+        alt="Outliers"
+    >
+
+</div>
+
+    <span class="book_category">
+        Success
+    </span>
+
+    <h3>Outliers</h3>
+
+    <p class="author">
+        Malcolm Gladwell
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.8</span>
+    </div>
+
+    <p class="book_description">
+        Discover the hidden factors behind extraordinary success and achievement.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      The 48 Laws of Power
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/The 48 Laws of Power.jpg"
+        alt="The 48 Laws of Power"
+    >
+
+</div>
+
+    <span class="book_category">
+        Strategy
+    </span>
+
+    <h3>The 48 Laws of Power</h3>
+
+    <p class="author">
+        Robert Greene
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.8</span>
+    </div>
+
+    <p class="book_description">
+        Timeless strategies for influence, leadership, negotiation, and personal power.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      The 4-Hour Workweek
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/The 4-Hour Workweek.jpg"
+        alt="The 4-Hour Workweek"
+    >
+
+</div>
+
+    <span class="book_category">
+        Entrepreneurship
+    </span>
+
+    <h3>The 4-Hour Workweek</h3>
+
+    <p class="author">
+        Timothy Ferriss
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.7</span>
+    </div>
+
+    <p class="book_description">
+        Learn how to design your ideal lifestyle and build a business with freedom.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+        <!-- =========================
+      Principles
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Principles.jpg"
+        alt="Principles"
+    >
+
+</div>
+
+    <span class="book_category">
+        Leadership
+    </span>
+
+    <h3>Principles</h3>
+
+    <p class="author">
+        Ray Dalio
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.8</span>
+    </div>
+
+    <p class="book_description">
+        Practical principles for better decisions in life, work, and leadership.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      The Psychology of Money
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/The Psychology of Money.jpg"
+        alt="The Psychology of Money"
+    >
+
+</div>
+
+    <span class="book_category">
+        Finance
+    </span>
+
+    <h3>The Psychology of Money</h3>
+
+    <p class="author">
+        Morgan Housel
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.9</span>
+    </div>
+
+    <p class="book_description">
+        Timeless lessons about wealth, investing, financial behavior, and decision making.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      Hooked
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Hooked.jpg"
+        alt="Hooked"
+    >
+
+</div>
+
+    <span class="book_category">
+        Product Design
+    </span>
+
+    <h3>Hooked</h3>
+
+    <p class="author">
+        Nir Eyal
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.7</span>
+    </div>
+
+    <p class="book_description">
+        Learn how successful products create habit-forming user experiences.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      Essentialism
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Essentialism.jpg"
+        alt="Essentialism"
+    >
+
+</div>
+
+    <span class="book_category">
+        Productivity
+    </span>
+
+    <h3>Essentialism</h3>
+
+    <p class="author">
+        Greg McKeown
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.8</span>
+    </div>
+
+    <p class="book_description">
+        Focus on what truly matters by eliminating the unnecessary from your life.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      Meditations
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Meditations.jpg"
+        alt="Meditations"
+    >
+
+</div>
+
+    <span class="book_category">
+        Philosophy
+    </span>
+
+    <h3>Meditations</h3>
+
+    <p class="author">
+        Marcus Aurelius
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.9</span>
+    </div>
+
+    <p class="book_description">
+        Timeless Stoic reflections on wisdom, discipline, resilience, and inner peace.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      Deep Work
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Deep Work.jpg"
+        alt="Deep Work"
+    >
+
+</div>
+
+    <span class="book_category">
+        Productivity
+    </span>
+
+    <h3>Deep Work</h3>
+
+    <p class="author">
+        Cal Newport
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.8</span>
+    </div>
+
+    <p class="book_description">
+        Master deep focus, eliminate distractions, and produce meaningful work.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      Thinking, Fast and Slow
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/Thinking, Fast and Slow.jpg"
+        alt="Thinking, Fast and Slow"
+    >
+
+</div>
+
+    <span class="book_category">
+        Psychology
+    </span>
+
+    <h3>Thinking, Fast and Slow</h3>
+
+    <p class="author">
+        Daniel Kahneman
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.8</span>
+    </div>
+
+    <p class="book_description">
+        Understand how the human mind thinks, judges, and makes everyday decisions.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =========================
+      The Intelligent Investor
+========================= -->
+
+<div class="book_card">
+
+    <div class="book_cover">
+
+    <img
+        src="images/The Intelligent Investor.jpg"
+        alt="The Intelligent Investor"
+    >
+
+</div>
+
+    <span class="book_category">
+        Investing
+    </span>
+
+    <h3>The Intelligent Investor</h3>
+
+    <p class="author">
+        Benjamin Graham
+    </p>
+
+    <div class="rating">
+        ★★★★★ <span>4.9</span>
+    </div>
+
+    <p class="book_description">
+        The classic guide to value investing, smart financial decisions, and long-term success.
+    </p>
+
+    <div class="book_actions">
+
+        <button class="fav_btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <a class="read_btn" href="#">
+            Read
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+    </div>
+
+</div>
+      </div>
+    </section>
+
+<section class="authors_section">
+
+    <div class="authors_header">
+
+        <h2 class="authors_title">
+            Featured Authors
+        </h2>
+
+        <p class="authors_subtitle">
+            Meet some of the authors whose books are featured in our library.
+        </p>
+
+    </div>
+
+    <div class="authors_grid">
+
+        <div class="author_card">
+
+            <img src="images/authors/james-clear.jpg" alt="James Clear">
+
+            <h3>James Clear</h3>
+
+            <span>Author of <b>Atomic Habits</b></span>
+
+            <a href="#">View Books</a>
+
+        </div>
+
+        <div class="author_card">
+
+            <img src="images/authors/george-orwell.jpg" alt="George Orwell">
+
+            <h3>George Orwell</h3>
+
+            <span>Author of <b>1984</b></span>
+
+            <a href="#">View Books</a>
+
+        </div>
+
+        <div class="author_card">
+
+            <img src="images/authors/paulo-coelho.jpg" alt="Paulo Coelho">
+
+            <h3>Paulo Coelho</h3>
+
+            <span>Author of <b>The Alchemist</b></span>
+
+            <a href="#">View Books</a>
+
+        </div>
+
+        <div class="author_card">
+
+            <img src="images/authors/morgan-housel.jpg" alt="Morgan Housel">
+
+            <h3>Morgan Housel</h3>
+
+            <span>Author of <b>The Psychology of Money</b></span>
+
+            <a href="#">View Books</a>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="newsletter">
+
+    <div class="newsletter_box">
+
+        <p class="newsletter_label">
+            Stay Connected
+        </p>
+
+        <h2 class="newsletter_title">
+
+            Never Miss a Great Book
+
+        </h2>
+
+        <p class="newsletter_subtitle">
+
+            Get updates whenever new books, authors, and collections are added to Novelio.
+
+        </p>
+
+        <form class="newsletter_form">
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+            >
+
+            <button>
+
+                Join Novelio
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer_container">
+
+        <div class="footer_brand">
+
+            <h2>Novelio</h2>
+
+            <span></span>
+
+            <p>
+                Discover books, explore authors,
+                and enjoy reading every day.
+            </p>
+
+        </div>
+
+        <div class="footer_links">
+
+            <h3>Explore</h3>
+
+            <a href="home.html">Home</a>
+
+            <a href="browse.html">Browse</a>
+
+            <a href="authors.html">Authors</a>
+
+            <a href="favorites.html">Favorites</a>
+
+        </div>
+
+        <div class="footer_social">
+
+            <h3>Connect</h3>
+
+            <div class="social_icons">
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer_bottom">
+
+        © 2026 Novelio. All rights reserved.
+
+    </div>
+
+</footer>
+
+        <script src="script.js"></script>
+  </body>
+</html>
