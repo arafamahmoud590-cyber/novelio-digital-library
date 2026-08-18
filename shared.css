@@ -1,0 +1,261 @@
+body {
+  margin: 0px;
+  font-family: "Playfair Display", serif;
+  background: linear-gradient(135deg, #f7f3ec, #efe6d6);
+ 
+  
+}
+* {
+  box-sizing: border-box;
+}
+html{
+
+    scroll-behavior:smooth;
+
+}
+a {
+  text-decoration: none;
+}
+/*=============================
+        HEADER
+=============================*/
+
+.header{
+
+    position:sticky;
+
+    top:20px;
+
+    z-index:1000;
+
+    width:min(1380px,94%);
+
+    margin:auto;
+
+    height:82px;
+
+    padding:0 30px;
+
+    display:grid;
+
+    grid-template-columns:auto 1fr auto;
+
+    align-items:center;
+
+    background:rgba(252,250,247,.88);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(197,154,83,.12);
+
+    border-radius:22px;
+
+    box-shadow:
+
+    0 12px 35px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.header:hover{
+
+    box-shadow:
+
+    0 20px 45px rgba(0,0,0,.08);
+
+}
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-decoration:none;
+
+}
+.logo_icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#d4aa63,#b8873d);
+
+    color:white;
+
+    font-size:22px;
+
+    transition:.35s;
+
+}
+.logo:hover .logo_icon{
+
+    transform:rotate(-8deg);
+
+}
+.logo_text h2{
+
+    font-family:Georgia,serif;
+
+    color:#3d2a23;
+
+    font-size:32px;
+
+    margin:0;
+
+}
+.logo_text span{
+
+    font-size:11px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#b38744;
+
+}
+.nav{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    list-style:none;
+
+}
+
+
+/* ===========================
+          LINKS
+=========================== */
+
+.navlink{
+
+    padding:12px 20px;
+
+    text-decoration:none;
+
+    color:#4a3630;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+/* Hover */
+
+.navlink:hover{
+
+    background:#c59a53;
+
+    color:white;
+
+}
+
+/* الخط الأبيض */
+
+.navlink::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:5px;
+
+    width:0;
+
+    height:2px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    transition:.3s;
+
+    transform:translateX(-50%);
+
+}
+
+.navlink.active{
+
+    background:#4a3630;
+
+    color:white;
+
+}
+.header_icons{
+
+    display:flex;
+
+    gap:12px;
+
+}
+.header_icons a{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#f5efe5;
+
+    color:#4a3630;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+.header_icons a:hover{
+
+    background:#c59a53;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+/* الصفحة الحالية */
+
+.navlink.active{
+
+    background:#4a3630;
+
+    color:white;
+
+}
+
+.navlink.active::after{
+
+    width:55%;
+
+}
