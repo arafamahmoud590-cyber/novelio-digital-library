@@ -28,17 +28,20 @@ Novelio is a digital library web app for browsing, reading, and downloading book
 ├── library.js            # Library page logic (in progress – empty)
 ├── shared.js              # Shared logic across pages (in progress – empty)
 └── css/
-    ├── style.css          # Home page styles (missing – needs to be added)
-    ├── shared.css          # Shared styles across pages (missing – needs to be added)
-    └── library.css         # Library page styles (missing – needs to be added)
+    ├── style.css           # Home page styles
+    ├── shared.css          # Shared styles across pages
+    ├── library.css         # Library page styles
+    ├── authors.css         # Authors page styles (in progress – empty)
+    └── categories.css      # Categories page styles (in progress – empty)
 ```
 
 ##  Known Issues / TODO
 
-- [ ] Add `css/style.css`, `css/shared.css`, and `css/library.css` — referenced in the HTML but not yet created
+- [ ] Finish `css/authors.css` and `css/categories.css` — currently empty
 - [ ] Fill in `authors.html`, `categories.html`, `favorites.html`
 - [ ] Implement `library.js` and `shared.js`
 - [ ] Fix navigation inconsistency: some links point to `home.html` while the actual home file is `index.html`
+- [ ] Add a `background.jpg` or hero image if used by the styles
 
 ## Getting Started
 
