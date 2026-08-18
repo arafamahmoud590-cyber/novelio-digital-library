@@ -1,0 +1,213 @@
+.library_hero{
+
+    width:min(900px,90%);
+
+    margin:80px auto 60px;
+
+    text-align:center;
+
+}
+
+.library_badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:#f8f2e8;
+
+    color:#b38744;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.library_badge i{
+
+    font-size:18px;
+
+}
+
+.library_title{
+
+    font-size:60px;
+
+    color:#3d2a23;
+
+    font-family:Georgia,serif;
+
+    margin-bottom:20px;
+
+}
+
+.library_subtitle{
+
+    color:#7b6d61;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+/*==============================
+        STATS
+===============================*/
+
+.library_stats{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.stat_card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    border:1px solid rgba(197,154,83,.18);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.stat_card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat_card i{
+
+    font-size:30px;
+
+    color:#c59a53;
+
+    margin-bottom:18px;
+
+}
+
+.stat_card h3{
+
+    color:#3d2a23;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.stat_card span{
+
+    color:#8a7a6d;
+
+}
+/*==============================
+        SEARCH
+===============================*/
+
+.library_search{
+
+    width:min(900px,90%);
+
+    margin:70px auto;
+
+}
+
+.library_search_box{
+
+    display:flex;
+
+    align-items:center;
+
+    background:white;
+
+    border-radius:60px;
+
+    padding:12px 15px 12px 25px;
+
+    border:2px solid rgba(197,154,83,.15);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.library_search_box i{
+
+    color:#b38744;
+
+    font-size:22px;
+
+}
+
+.library_search_box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    padding:0 20px;
+
+    font-size:17px;
+
+    color:#3d2a23;
+
+}
+
+.library_search_box button{
+
+    border:none;
+
+    background:#4a3630;
+
+    color:white;
+
+    padding:16px 35px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.library_search_box button:hover{
+
+    background:#c59a53;
+
+}
